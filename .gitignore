@@ -1,0 +1,4 @@
+# Игнорируем папку с ядром и upload
+bitrix/
+upload/
+git_template/
