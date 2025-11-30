@@ -3,7 +3,7 @@
         <div class="footer__wrp">
             <nav>
                 <ul class="footer__nav-list">
-                    <li><a href="#">каталог</a></li>
+                    <li><a href="<?=SITE_DIR?>catalog/">каталог</a></li>
                     <li><a href="#">о магазине</a></li>
                     <li><a href="#">контакты</a></li>
                     <li><a href="#">доставка и оплата</a></li>
