@@ -27,7 +27,6 @@ $this->setFrameMode(true);
                     <div class="slider__item" id="<?=$this->GetEditAreaId($arItem['ID']);?>">
                         <div class="slider__item-wrp">
                             <?php
-                            // Получаем картинку
                             $picture = null;
                             if (isset($arItem['PREVIEW_PICTURE']) && $arItem['PREVIEW_PICTURE']['SRC']) {
                                 $picture = $arItem['PREVIEW_PICTURE'];

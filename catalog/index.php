@@ -70,7 +70,7 @@ $APPLICATION->IncludeComponent(
 		"ELEMENT_SORT_ORDER" => "asc",
 		"ELEMENT_SORT_ORDER2" => "desc",
 		"FILTER_HIDE_ON_MOBILE" => "N",
-		"FILTER_VIEW_MODE" => "VERTICAL",
+		"FILTER_VIEW_MODE" => "HORIZONTAL",
 		"GIFTS_DETAIL_BLOCK_TITLE" => "Выберите один из подарков",
 		"GIFTS_DETAIL_HIDE_BLOCK_TITLE" => "N",
 		"GIFTS_DETAIL_PAGE_ELEMENT_COUNT" => "4",
@@ -94,7 +94,8 @@ $APPLICATION->IncludeComponent(
 		"INCLUDE_SUBSECTIONS" => "Y",
 		"INSTANT_RELOAD" => "N",
 		"LABEL_PROP" => array(
-			0 => "POPULAR",
+			0 => "COLOR",
+			1 => "SIZE",
 		),
 		"LAZY_LOAD" => "N",
 		"LINE_ELEMENT_COUNT" => "3",
@@ -205,7 +206,6 @@ $APPLICATION->IncludeComponent(
 		"TOP_SLIDER_INTERVAL" => "3000",
 		"TOP_SLIDER_PROGRESS" => "N",
 		"LABEL_PROP_MOBILE" => array(
-			0 => "POPULAR",
 		),
 		"LABEL_PROP_POSITION" => "top-left",
 		"SEF_FOLDER" => "/catalog/",
