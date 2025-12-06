@@ -89,7 +89,7 @@ $APPLICATION->IncludeComponent(
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_ROW_VARIANTS" => "[{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false},{'VARIANT':'2','BIG_DATA':false}]",
 		"PRODUCT_SUBSCRIPTION" => "Y",
-		"SECTION_CODE" => "",
+		"SECTION_CODE" => $_REQUEST["SECTION_CODE"],
 		"SECTION_ID" => $_REQUEST["SECTION_ID"],
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",

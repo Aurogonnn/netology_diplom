@@ -100,6 +100,8 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+
+
 @media (max-width: 1920px) {
   .header__wrp-nav {
     left: 0;
@@ -432,7 +434,7 @@ a {
 
 .header__catalog-categories {
   position: absolute;
-  bottom: -588px;
+  bottom: -330px;
   z-index: 3;
   display: none;
 }
@@ -448,9 +450,9 @@ a {
 
 .header__sub-catalog-categories {
   position: absolute;
-  bottom: 196px;
+  bottom: 112px;
   display: none;
-  left: 390px;
+  left: 300px;
   z-index: 1;
 }
 .header__sub-catalog-categories:hover {

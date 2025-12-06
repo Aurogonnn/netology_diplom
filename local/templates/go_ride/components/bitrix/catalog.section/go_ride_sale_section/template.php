@@ -11,9 +11,9 @@
 /** @var string $componentPath */
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
-d($arResult);
+//d($arResult);
 ?>
-<section class="favourite">
+<section class="favourite favourite--section">
     <div class="favourite__slider">
         <?if (!empty($arResult['ITEMS'])):?>
             <div class="slider slick-favourite-slider">
