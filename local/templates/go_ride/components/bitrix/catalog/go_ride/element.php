@@ -224,7 +224,8 @@ $isSidebar = ($arParams['SIDEBAR_DETAIL_SHOW'] == 'Y' && !empty($arParams['SIDEB
 
 		$elementId = $APPLICATION->IncludeComponent(
 			'bitrix:catalog.element',
-			'',
+			'go_ride_catalog_element',
+            //'.default',
 			$componentElementParams,
 			$component
 		);

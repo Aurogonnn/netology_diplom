@@ -166,6 +166,7 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                 </ul>
             </nav>
         </div>
+    </header>
         <?
         // Баннер со скидкой 5%
 
@@ -278,8 +279,6 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
         ),
             false
         );?>
-        
-    </header>
 <?php elseif ($isCatalogSubsection): ?>
     <header class="header header--catalog header--catalog-subsection">
         <div class="container">

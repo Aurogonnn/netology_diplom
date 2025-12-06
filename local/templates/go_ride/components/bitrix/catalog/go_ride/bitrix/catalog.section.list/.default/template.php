@@ -22,7 +22,7 @@ foreach($arResult['SECTIONS'] as $arSection) {
     $arSectionsByParent[$parentId][] = $arSection;
 }
 
-//d($arResult['SECTIONS']);
+//d($arResult);
 ?>
 
 <main>
