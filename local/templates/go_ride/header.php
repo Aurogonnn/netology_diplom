@@ -108,7 +108,6 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                             <li><a href="#">контакты</a></li>
                             <li><a href="#">отзывы</a></li>
                             <li><a href="#">доставка и оплата</a></li>
-                            <li><a href="<?=SITE_DIR?>test.php">тест</a></li>
                         </ul>
                     </nav>
                     <div class="header__nav-box header__search">
