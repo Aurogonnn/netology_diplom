@@ -46,7 +46,18 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
         <div class="header__wrp">
             <div class="header__wrp-nav">
                 <a href="/">
-                    <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
+                    <?
+                    // Логотип
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:main.include",
+                        "",
+                        Array(
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "",
+                            "EDIT_TEMPLATE" => "",
+                            "PATH" => "/include/logo.php"
+                        )
+                    );?>
                 </a>
                 <?
                 $APPLICATION->IncludeComponent(
@@ -285,7 +296,18 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
             <div class="header__wrp">
                 <div class="header__wrp-nav header__wrp-nav--catalog" style="width: 100%; max-width: 1920px;">
                     <a href="/">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
+                        <?
+                        // Логотип
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/logo.php"
+                            )
+                        );?>
                     </a>
                     <?
                     $APPLICATION->IncludeComponent(
@@ -375,7 +397,18 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
             <div class="header__wrp">
                 <div class="header__wrp-nav header__wrp-nav--catalog">
                     <a href="/">
-                        <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
+                        <?
+                        // Логотип
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:main.include",
+                            "",
+                            Array(
+                                "AREA_FILE_SHOW" => "file",
+                                "AREA_FILE_SUFFIX" => "",
+                                "EDIT_TEMPLATE" => "",
+                                "PATH" => "/include/logo.php"
+                            )
+                        );?>
                     </a>
                     <?
                     $APPLICATION->IncludeComponent(
