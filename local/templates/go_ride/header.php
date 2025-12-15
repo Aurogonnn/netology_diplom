@@ -363,36 +363,7 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
         <div class="header__inner">
             <div class="container">
                 <nav>
-                    <ul class="header__inner-breadcrumbs-list">
-                        <?php
-                        // Автоматические хлебные крошки для подраздела
-                        $pathParts = explode('/', trim($currentPage, '/'));
-                        $breadcrumbs = [];
-                        $currentPath = '';
-
-                        foreach ($pathParts as $part) {
-                            if (!empty($part)) {
-                                $currentPath .= '/' . $part;
-                                $breadcrumbs[] = [
-                                    'name' => $part,
-                                    'url' => $currentPath . '/'
-                                ];
-                            }
-                        }
-
-                        foreach ($breadcrumbs as $index => $crumb) {
-                            $isLast = $index === count($breadcrumbs) - 1;
-                            ?>
-                            <li>
-                                <a href="<?=$crumb['url']?>">
-                                    <?=htmlspecialchars($crumb['name'])?>
-                                    <?php if (!$isLast): ?>&nbsp/&nbsp<?php endif; ?>
-                                </a>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                    </ul>
+                    <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", "go_ride_breadcrumbs", Array(), false);?>
                 </nav>
             </div>
         </div>
@@ -466,36 +437,7 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
         <div class="header__inner">
             <div class="container">
                 <nav>
-                    <ul class="header__inner-breadcrumbs-list">
-                        <?php
-                        // Автоматические хлебные крошки для подраздела
-                        $pathParts = explode('/', trim($currentPage, '/'));
-                        $breadcrumbs = [];
-                        $currentPath = '';
-
-                        foreach ($pathParts as $part) {
-                            if (!empty($part)) {
-                                $currentPath .= '/' . $part;
-                                $breadcrumbs[] = [
-                                    'name' => $part,
-                                    'url' => $currentPath . '/'
-                                ];
-                            }
-                        }
-
-                        foreach ($breadcrumbs as $index => $crumb) {
-                            $isLast = $index === count($breadcrumbs) - 1;
-                            ?>
-                            <li>
-                                <a href="<?=$crumb['url']?>">
-                                    <?=htmlspecialchars($crumb['name'])?>
-                                    <?php if (!$isLast): ?>&nbsp/&nbsp<?php endif; ?>
-                                </a>
-                            </li>
-                            <?php
-                        }
-                        ?>
-                    </ul>
+                    <? $APPLICATION->IncludeComponent("bitrix:breadcrumb", "go_ride_breadcrumbs", Array(), false);?>
                 </nav>
             </div>
         </div>
