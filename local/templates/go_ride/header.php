@@ -48,14 +48,13 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                 <a href="/">
                     <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
                 </a>
-                <nav class="header__nav-list-wrp">
-                    <ul class="header__nav-list">
-                        <li><a href="<?=SITE_DIR?>catalog/">каталог</a></li>
-                        <li><a href="#">контакты</a></li>
-                        <li><a href="#">отзывы</a></li>
-                        <li><a href="#">доставка и оплата</a></li>
-                    </ul>
-                </nav>
+                <?
+                $APPLICATION->IncludeComponent(
+                    "bitrix:menu",
+                    "menu_top",
+                    Array(
+                    )
+                );?>
                 <div class="header__nav-box header__search">
                     <form action="#">
                         <label>
@@ -103,13 +102,13 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                     <a href="/">
                         <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
                     </a>
-                    <nav class="header__nav-list-wrp">
-                        <ul class="header__nav-list">
-                            <li><a href="#">контакты</a></li>
-                            <li><a href="#">отзывы</a></li>
-                            <li><a href="#">доставка и оплата</a></li>
-                        </ul>
-                    </nav>
+                    <?
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "menu_top",
+                        Array(
+                        )
+                    );?>
                     <div class="header__nav-box header__search">
                         <form action="#">
                             <label>
@@ -288,13 +287,13 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                     <a href="/">
                         <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
                     </a>
-                    <nav class="header__nav-list-wrp">
-                        <ul class="header__nav-list">
-                            <li><a href="#">контакты</a></li>
-                            <li><a href="#">отзывы</a></li>
-                            <li><a href="#">доставка и оплата</a></li>
-                        </ul>
-                    </nav>
+                    <?
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "menu_top",
+                        Array(
+                        )
+                    );?>
                     <div class="header__nav-box header__search">
                         <form action="#">
                             <label>
@@ -378,13 +377,13 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                     <a href="/">
                         <img src="<?=SITE_TEMPLATE_PATH?>/img/goride-logo.svg" alt="logo">
                     </a>
-                    <nav class="header__nav-list-wrp">
-                        <ul class="header__nav-list">
-                            <li><a href="#">contacts</a></li>
-                            <li><a href="#">sale</a></li>
-                            <li><a href="#">about</a></li>
-                        </ul>
-                    </nav>
+                    <?
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "menu_top",
+                        Array(
+                        )
+                    );?>
                     <div class="header__nav-box header__search">
                         <form action="#">
                             <label>
