@@ -5,7 +5,13 @@ $APPLICATION->SetTitle("");
 ?>
 
 
-
+<?
+$APPLICATION->IncludeComponent(
+    "bitrix:subscribe.form",
+    "",
+    Array(
+    )
+);?>
 
 
 
