@@ -67,12 +67,14 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                     )
                 );?>
                 <div class="header__nav-box header__search">
-                    <form action="#">
-                        <label>
-                            <input type="search" placeholder="Поиск">
-                            <span class="visually-hidden">поиск</span>
-                        </label>
-                    </form>
+                    <?
+
+                    $APPLICATION->IncludeComponent(
+                        "bitrix:search.form",
+                        "go_search",
+                        Array(
+                        )
+                    );?>
 
                     <a href="<?=SITE_DIR?>personal/card/">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,12 +123,14 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                         )
                     );?>
                     <div class="header__nav-box header__search">
-                        <form action="#">
-                            <label>
-                                <input type="search" placeholder="Поиск">
-                                <span class="visually-hidden">поиск</span>
-                            </label>
-                        </form>
+                        <?
+
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:search.form",
+                            "go_search",
+                            Array(
+                            )
+                        );?>
                         <a href="<?=SITE_DIR?>personal/card/">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -317,12 +321,14 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                         )
                     );?>
                     <div class="header__nav-box header__search">
-                        <form action="#">
-                            <label>
-                                <input type="search" placeholder="Search">
-                                <span class="visually-hidden">search</span>
-                            </label>
-                        </form>
+                        <?
+
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:search.form",
+                            "go_search",
+                            Array(
+                            )
+                        );?>
                         <a href="<?=SITE_DIR?>personal/card/">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
@@ -418,12 +424,14 @@ $isCatalogSubsection = strpos($currentPage, '/catalog/') === 0 && !$isCatalogRoo
                         )
                     );?>
                     <div class="header__nav-box header__search">
-                        <form action="#">
-                            <label>
-                                <input type="search" placeholder="Search">
-                                <span class="visually-hidden">search</span>
-                            </label>
-                        </form>
+                        <?
+
+                        $APPLICATION->IncludeComponent(
+                            "bitrix:search.form",
+                            "go_search",
+                            Array(
+                            )
+                        );?>
                         <a href="<?=SITE_DIR?>personal/card/">
                             <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
