@@ -26,7 +26,7 @@ $price = $arResult['ITEM_PRICES'][0]['UNROUND_PRICE'] ?? 0;
 
 
 
-//d($arResult["PROPERTIES"]);
+d($arResult);
 ?>
 
 <section class="product-card">

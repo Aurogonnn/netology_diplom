@@ -1,5 +1,5 @@
 <?
-define("HIDE_SIDEBAR", true);
+define('SITE_TEMPLATE_ID', 'go_ride_catalog');
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("");
 ?>
@@ -134,7 +134,7 @@ $APPLICATION->IncludeComponent(
 		"PAGER_TEMPLATE" => ".default",
 		"PAGER_TITLE" => "Товары",
 		"PAGE_ELEMENT_COUNT" => "30",
-		"PARTIAL_PRODUCT_PROPERTIES" => "N",
+		"PARTIAL_PRODUCT_PROPERTIES" => "Y",
 		"PRICE_CODE" => array(
 			0 => "BASE",
 		),
@@ -210,6 +210,21 @@ $APPLICATION->IncludeComponent(
 		"LABEL_PROP_POSITION" => "top-left",
 		"SEF_FOLDER" => "/catalog/",
 		"FILTER_NAME" => "arrFilter",
+		"PRODUCT_DISPLAY_MODE" => "N",
+		"OFFER_ADD_PICT_PROP" => "-",
+		"LIST_OFFERS_FIELD_CODE" => array(
+			0 => "ID",
+			1 => "",
+			2 => "",
+		),
+		"DETAIL_OFFERS_FIELD_CODE" => array(
+			0 => "ID",
+			1 => "",
+		),
+		"OFFERS_SORT_FIELD" => "sort",
+		"OFFERS_SORT_ORDER" => "asc",
+		"OFFERS_SORT_FIELD2" => "id",
+		"OFFERS_SORT_ORDER2" => "desc",
 		"SEF_URL_TEMPLATES" => array(
 			"sections" => "",
 			"section" => "#SECTION_CODE#/",
